@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #2980b9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form {
+    background: hsl(337, 91%, 69%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+    background-color: #2980b9;
+}
+
+form button:active {
+    background-color: #1f6fa4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #000;
+}
+
+table th {
+    background-color: #2980b9;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ecf0f1;
+}
+
+#relatorioFornecedores table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#relatorioFornecedores table th,
+#relatorioFornecedores table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #000;
+}
+
+#relatorioFornecedores table th {
+    background-color: #16a085;
+    color: white;
+}
+
+#relatorioFornecedores table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+#relatorioFornecedores table tr:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1f6fa4;
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header a {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input,
+    form button {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}

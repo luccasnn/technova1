@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <header class="header">
+        <h2>Menu</h2>
+        <a href="produtos.html">Produtos</a><br>
+        <a href="clientes.html">Clientes</a><br>
+        <a href="fornecedores.html">Fornecedores</a><br>
+        <a href="index.html">Sair</a>
+    
+    <main>
+        <section id="cadastroProdutos">
+            <h2>Cadastro de Produto</h2>
+            <form id="formProduto">
+                <input type="hidden" id="produtoIndex">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+        
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" required><br>
+        
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" required><br>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <button type="reset">Limpar</button>
+                <button type="submit">Cadastrar</button>
+            </form>
+        
+            <h2>Produtos Cadastrados</h2>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>E-mail</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>&nbsp;</tbody>
+            </table>
+
+            
+        </section>
+        <section id="relatorioProdutos">
+            <h2>Relatório de Produtos Cadastrados</h2>
+            <table id="tabelaRelatorio">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>&nbsp;</tbody>
+            </table>
+            <button onclick="gerarRelatorioProdutos()">Atualizar Relatório</button>
+        </section>
+    </main>
+    <script src="produtos.js"></script>    
+</body>
+</html>
